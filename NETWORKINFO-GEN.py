@@ -65,7 +65,7 @@ def main():
     print(f"\t→ CIDR: /{cidr}")
 
     ''' CALCULATE AVAILABLE ADDRESSES '''
-    available_addr = 2 ** (32 - int(cidr))
+    available_addr = 2 ** (32 - int(cidr)) - 2
     print(f"\t→ AVAILABLE ADDRESSES: {available_addr}")
     print("DONE.")
 
